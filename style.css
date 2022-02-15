@@ -12,13 +12,43 @@
 .header {
 	display: grid;
 	grid-area: header;
+	grid-template-areas: "hdrtop hdrtop"
+						 "hdrbot hdrnav";
+}
+
+.hdr-top {
+	display: grid;
+	grid-area: hdrtop;
+}
+
+.hdr-bot {
+	grid-area: hdrbot;
+}
+
+.hdr-nav {
+	grid-area: hdrnav;
 }
 
 .sidebar {
 	grid-area: sidebar;
+	display: grid;
 }
 
 .main-content {
 	display: grid;
 	grid-area: main-content;
+	grid-template-areas: "projects announce"
+						 "projects trend";
+}
+
+.projects {
+	grid-area: projects;
+}
+
+.announce {
+	grid-area: announce;
+}
+
+.trend {
+	grid-area: trend;
 }
