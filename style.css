@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-areas: "sidebar header"
+						 "sidebar main-content";
+}
+
+.header {
+	display: grid;
+	grid-area: header;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.main-content {
+	display: grid;
+	grid-area: main-content;
+}
